@@ -15,10 +15,8 @@ class String
   end
 
   def count_sentences
-    array = self.split(/[.!?]/)
-    new_array = array.select do 
-      |sentence| !sentence.include?("")
-      return new_array.count
+    sentence_array = self.split(/[.!?]/)
+    sentence_array.reject { |ele| 
     end
     binding.pry
   end
